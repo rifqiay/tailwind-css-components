@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between items-center px-3 py-3 bg-[#2587be] relative"
+    >
+      <input type="checkbox" id="cek" class="peer hidden" />
+      <div>
+        <h1 class="text-3xl font-bold text-[#d3eaf2]">Logo</h1>
+      </div>
+      <label
+        for="cek"
+        class="text-lg font-semibold text-white cursor-pointer sm:hidden"
+      >
+        menu
+      </label>
+      <div
+        class="absolute left-0 top-[60px] -translate-x-[41rem] peer-checked:translate-x-0 transition duration-500 w-1/2 sm:translate-x-0 sm:w-auto sm:static"
+      >
+        <ul
+          class="bg-[#25a5be] h-screen p-3 flex flex-col gap-5 sm:flex-row sm:h-auto sm:bg-inherit"
+        >
+          <li
+            class="text-[#d3eaf2] font-semibold tracking-wide px-2 py-1 rounded-md hover:cursor-pointer sm:hover:bg-blue-400 hover:text-white transition-all"
+          >
+            Home
+          </li>
+          <li
+            class="text-[#d3eaf2] font-semibold tracking-wide px-2 py-1 rounded-md hover:cursor-pointer sm:hover:bg-blue-400 hover:text-white transition-all"
+          >
+            Project
+          </li>
+          <li
+            class="text-[#d3eaf2] font-semibold tracking-wide px-2 py-1 rounded-md hover:cursor-pointer sm:hover:bg-blue-400 hover:text-white transition-all"
+          >
+            Contact
+          </li>
+          <li
+            class="text-[#d3eaf2] font-semibold tracking-wide px-2 py-1 rounded-md hover:cursor-pointer sm:hover:bg-blue-400 hover:text-white transition-all"
+          >
+            About
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
